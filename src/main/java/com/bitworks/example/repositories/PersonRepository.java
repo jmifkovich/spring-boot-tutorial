@@ -1,9 +1,10 @@
-package com.example.springboottutorial.repositories;
+package com.bitworks.example.repositories;
 
-import com.example.springboottutorial.entities.Person;
+import com.bitworks.example.entities.Person;
 import org.springframework.data.repository.CrudRepository;
 
 public interface PersonRepository extends CrudRepository<Person, Integer>
 {
     Person findPersonById(Integer id);
 }
+

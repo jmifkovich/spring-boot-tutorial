@@ -1,7 +1,7 @@
-package com.example.springboottutorial.controllers;
+package com.bitworks.example.controllers;
 
-import com.example.springboottutorial.entities.Person;
-import com.example.springboottutorial.repositories.PersonRepository;
+import com.bitworks.example.repositories.PersonRepositoryJPA;
+import com.bitworks.example.entities.Person;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -10,7 +10,8 @@ public class DemoController {
 
 
     @Autowired
-    private PersonRepository personRepository;
+    //private PersonRepository personRepository;
+    private PersonRepositoryJPA personRepository;
 
     @PostMapping("/add")
     public String addPerson(@RequestParam String first, @RequestParam String last) {

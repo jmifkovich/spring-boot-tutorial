@@ -1,4 +1,6 @@
-package com.example.springboottutorial.entities;
+package com.bitworks.example.entities;
+
+import org.jetbrains.annotations.NotNull;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -36,6 +38,13 @@ public class Person {
 
     public void setLastName(String lastName) {
         this.lastName = lastName;
+    }
+
+    public boolean equals(@NotNull Person pPerson)
+    {
+        if(this.firstName.equals(pPerson.firstName) && this.lastName.equals(pPerson.lastName))
+            return true;
+        return false;
     }
 
 }

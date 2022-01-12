@@ -1,4 +1,4 @@
-package com.example.springboottutorial.controllers;
+package com.bitworks.example.controllers;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
